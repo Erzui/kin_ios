@@ -15,7 +15,7 @@
 			height: 100vh;
 			margin: 0;
 			background-color: #2c2c2c; 
-			color: #f4f4f9;
+			color: #f4f4f9; 
 		}
 
 		h1 {
@@ -39,14 +39,45 @@
 		p {
 			font-size: 1.1em;
 			margin-top: 15px;
+			text-align: center;
+		}
+
+		.info-link {
+			margin-top: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.info-link img {
+			width: 300px;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+			transition: transform 0.3s ease;
+		}
+
+		.info-link img:hover {
+			transform: scale(1.05);
+		}
+
+		.info-link p {
+			margin-top: 10px;
+			font-size: 1.1em;
 		}
 	</style>
 </head>
 <body>
 	<h1>kin_</h1>
+	<p>Tippe auf das Bild um das Modell in AR zu sehen</p>
 	<a href="AvatarLoop.usdz" rel="ar">
 		<img src="kin_preview.jpg" alt="Vorschau AR-Modell">
 	</a>
-	<p>Tippe auf das Bild, um das Modell in AR zu sehen. Safari wird empfohlen</p>
+
+	<div class="info-link">
+	<p>Mehr Information</p>
+		<a href="https://www.theater-an-der-ruhr.de/de/programm/5759-erweiterte-realitaten" target="_blank">
+			<img src="info.png" alt="Mehr Informationen">
+		</a>
+	</div>
 </body>
 </html>
